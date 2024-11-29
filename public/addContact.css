@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+    padding-top: 60px; /* Space for navbar */
+    padding-bottom: 40px; /* Space for footer */
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+    position: fixed; /* Fixes the navbar to the top */
+    top: 0; /* Aligns it at the very top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures the navbar stays above other elements */
+    background-color: #000; /* Background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Equal spacing between items */
+    align-items: center; /* Vertically center items */
+}
+
+.navbar ul a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    padding: 15px 20px; /* Padding for clickable area */
+    display: block; /* Block-level element for full area */
+}
+
+.navbar ul a li {
+    transition: background 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+.navbar ul a:hover li {
+    color: #45a049; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
+
+/* Add Contact Page */
+.addc .addh1 {
+    color: #4CAF50;
+    margin: 20px 0;
+}
+
+.addc .c1 {
+    width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addc .con-group {
+    margin-bottom: 15px;
+}
+
+.addc label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.addc input[type="text"],
+.addc select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+.addc button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.addc button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Contact List Page */
+/* General Styles for Contact List */
+.conlist {
+    max-width: 800px; /* Set max width for layout */
+    margin: 100px auto; /* Center align with spacing */
+    padding: 20px; /* Internal padding */
+    background: #f9f9f9; /* Light gray background */
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.conlist h1 {
+    text-align: center; /* Center heading */
+    color: #333; /* Dark gray for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 1.8rem; /* Font size for prominence */
+}
+
+/* Contact Item Styles */
+.c21 {
+    margin-bottom: 15px; /* Space between contact cards */
+    padding: 15px; /* Internal padding */
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Light shadow */
+}
+
+.c31 {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.c31 li {
+    padding: 5px 0; /* Space between list items */
+    color: #555; /* Gray text for better readability */
+    font-size: 1rem; /* Standard font size */
+}
+
+/* Button Group Styles */
+.btn-group {
+    display: flex; /* Horizontal alignment */
+    justify-content: center; /* Center align buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Space above the buttons */
+}
+
+.btn-group a {
+    text-decoration: none; /* Remove underline */
+    padding: 8px 15px; /* Padding for button shape */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.9rem; /* Button text size */
+    font-weight: bold; /* Bold text */
+    display: inline-block; /* Block layout for proper padding */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Stripped Button Colors */
+.btn-group .cntinfo a {
+    background-color: #4caf50; /* Green for Info */
+    color: white; /* White text */
+}
+
+.btn-group .cntinfo a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.btn-group .edit a {
+    background-color: #ffa500; /* Orange for Edit */
+    color: white; /* White text */
+}
+
+.btn-group .edit a:hover {
+    background-color: #cc8400; /* Darker orange on hover */
+}
+
+.btn-group .delete a {
+    background-color: #f44336; /* Red for Delete */
+    color: white; /* White text */
+}
+
+.btn-group .delete a:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .conlist {
+        margin: 20px; /* Reduce side margins */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .btn-group {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 5px; /* Smaller gap for stacked buttons */
+    }
+}
+
+/* Footer */
+/* Slim Footer */
+.footer1 {
+    background-color: #000; /* Footer background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Center align content */
+    padding: 5px 0; /* Slim padding for narrow height */
+    position: fixed; /* Fixed to the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Align to the bottom of the viewport */
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-size: 12px; /* Smaller font for compact appearance */
+}
+
+.footer-content2 {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align text and links */
+}
+
+.footer-links3 {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* No padding */
+    margin: 5px 0 0; /* Slight margin above links */
+    display: flex; /* Flexbox for links */
+    justify-content: center; /* Center align links */
+    gap: 10px; /* Small spacing between links */
+}
+
+.footer-links3 li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 12px; /* Smaller font size for links */
+}
+
+.footer-links3 li a:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}

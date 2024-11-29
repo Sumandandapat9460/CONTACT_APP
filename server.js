@@ -13,6 +13,7 @@ const routing = require('./router/router')
 
 app.engine('handlebars', engine())
 app.set('view engine','handlebars')
+app.use(express.urlencoded({extended:true}))
 
 let connectDb = async()=>{
     await connect(MONGODB_URI) //await connect(MONGODB_URI)
@@ -21,7 +22,7 @@ let connectDb = async()=>{
 connectDb()
 
 app.get('/', (req, res) =>{
-    res.send('Hello')
+    res.render('home',{title: 'Home Page'})
 })
 app.get('/home', (req, res) =>{
     res.render('home',{title: 'Home Page'})
@@ -34,3 +35,4 @@ app.listen(PORT,err=>{
     console.log("server is running on port 5000");
     
 })
+

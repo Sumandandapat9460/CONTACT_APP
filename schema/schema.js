@@ -21,3 +21,4 @@ const cnt_Schema = new Schema({
 )
 
 module.exports = model('cnt_Schema',cnt_Schema,'cnt_Schema')
+
